@@ -42,7 +42,7 @@ window.onload = () => {
     console.log("switch" + switchCount++)
 
     var percentage = switchCount / 10000 * 100;
-    console.log("percentage " + Math.ceil(percentage) + " % of the time Swicth was correct");
+    console.log("percentage " + percentage.toFixed(2) + " % of the time Swicth was correct");
 
 
 
