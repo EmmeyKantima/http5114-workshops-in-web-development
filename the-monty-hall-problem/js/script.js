@@ -29,11 +29,9 @@ window.onload = () => {
         var resultOut = document.getElementById("result")
         if (car == choice) {
             stayCount++;
-            resultOut.innerHTML = "You should stay ";
         }
         else {
             switchCount++;
-            resultOut.innerHTML = "You should switch";
         }
 
     }
@@ -43,8 +41,7 @@ window.onload = () => {
 
     var percentage = switchCount / 10000 * 100;
     console.log("percentage " + percentage.toFixed(2) + " % of the time Swicth was correct");
-
-
+    resultOut.innerHTML = "You should switch because " + percentage.toFixed(2) + " % of the time Swicth was correct";
 
 
 }
